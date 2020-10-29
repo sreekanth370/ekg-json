@@ -7,6 +7,9 @@
 # version: 0.3.20190429
 #
 language: c
+arch:
+  - amd64
+  - ppc64le
 dist: xenial
 git:
   # whether to recursively clone submodules
