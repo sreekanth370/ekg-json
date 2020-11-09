@@ -7,9 +7,6 @@
 # version: 0.3.20190429
 #
 language: c
-arch:
-  - amd64
-  - ppc64le
 dist: xenial
 git:
   # whether to recursively clone submodules
@@ -45,6 +42,34 @@ matrix:
       addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-7.10.3","cabal-install-2.4"]}}
     - compiler: ghc-7.8.4
       addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-7.8.4","cabal-install-2.4"]}}
+    - compiler: ghc-7.6.3
+      addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-7.6.3","cabal-install-2.4"]}}
+  #befroe_install run ppc64
+      arch: ppc64le
+  - compiler: ghc-8.10.1
+      addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-8.10.1","cabal-install-3.2"]}}
+      arch: ppc64le
+    - compiler: ghc-8.8.3
+      addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-8.8.3","cabal-install-3.0"]}}
+      arch: ppc64le
+    - compiler: ghc-8.6.5
+      addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-8.6.5","cabal-install-2.4"]}}
+      arch: ppc64le
+    - compiler: ghc-8.4.4
+      addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-8.4.4","cabal-install-2.4"]}}
+      arch: ppc64le
+    - compiler: ghc-8.2.2
+      addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-8.2.2","cabal-install-2.4"]}}
+      arch: ppc64le
+    - compiler: ghc-8.0.2
+      addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-8.0.2","cabal-install-2.4"]}}
+      arch: ppc64le
+    - compiler: ghc-7.10.3
+      addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-7.10.3","cabal-install-2.4"]}}
+      arch: ppc64le
+    - compiler: ghc-7.8.4
+      addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-7.8.4","cabal-install-2.4"]}}
+      arch: ppc64le
     - compiler: ghc-7.6.3
       addons: {"apt":{"sources":["hvr-ghc"],"packages":["ghc-7.6.3","cabal-install-2.4"]}}
 before_install:
